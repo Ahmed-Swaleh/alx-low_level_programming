@@ -1,11 +1,10 @@
-#include <stdio.h>
-
-int main(void)
+/**
+ * reset_to_98 - updates the value it points
+ * @n: pointer of the direction at the variable n
+ *
+ * return: 0
+ */
+void reset_to_98(int *n)
 {
-	int n=98;
-	int *p;
-	p =&n;
-	printf("%p", &n);
-	printf("%p", p);
+	*n = 98;
 }
-
