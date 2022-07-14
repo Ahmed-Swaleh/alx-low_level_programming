@@ -1,20 +1,29 @@
-#ifndef "MAIN_H"
-#define "MAIN_H"
+#include "main.h"
 
-#include <stdio.h>
+/**
+ * *_strcat - function commute strings
+ * @dest: destination
+ * @src: source
+ * Return: the pointer to dest
+ */
+char *_strcat(char *dest, char *src)
+{
+	int i, j;
 
-int _putchar(char c);
+	i = 0;
+	j = 0;
 
-int *_strcat(char *dest, char *src);
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}
 
-char *_strncat(char *dest, char *src, int n);
-
-char *_strncpy(char *dest, char *src, int n);
-
-int _strcmp(char *s1, char *s2);
-void reverse_array(int *a, int n);
-char *string_toupper(char *);
-char *cap_string(char *);
-char *leet(char *);
-
-endif
