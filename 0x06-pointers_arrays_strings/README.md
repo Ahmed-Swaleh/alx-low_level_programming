@@ -1,1 +1,1 @@
-More tasks on poiters arrays and strings
+C programming task 0x06
