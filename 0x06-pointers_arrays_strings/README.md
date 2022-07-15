@@ -1,1 +1,1 @@
-C programming task 0x06
+C programming, Arrays strings and pointers
