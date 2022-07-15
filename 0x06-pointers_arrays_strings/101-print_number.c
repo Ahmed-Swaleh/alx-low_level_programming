@@ -16,7 +16,7 @@ void print_number(int n)
 		if (n < 0)
 		{
 			pos = n * -1;
-			putchar('-');
+			_putchar('-');
 		}
 		while (temp_tens <= pos)
 			temp_tens *= 10;
